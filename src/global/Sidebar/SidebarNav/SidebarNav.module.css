@@ -1,0 +1,24 @@
+.container {
+  flex-grow: 1;
+  padding: 0;
+  list-style: none;
+  line-height: 3.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container > li {
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+  transition: 0.5s;
+}
+
+.container a.dark {
+  color: #fff;
+}

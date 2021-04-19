@@ -1,0 +1,23 @@
+.container {
+  width: 80px;
+}
+
+.icon {
+  height: 35px;
+  filter: grayscale(0);
+  transition: 0.2s;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #009dff;
+}
+
+.flags-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

@@ -1,0 +1,27 @@
+.container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  height: 16px;
+  transition: 0.5s;
+}
+
+.menu-icon.dark {
+  filter: invert(1);
+}
+
+.menu-icon-active {
+  transform: rotateZ(-90deg);
+}
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+}

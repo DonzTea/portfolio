@@ -1,0 +1,144 @@
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  transition: 0.5s;
+}
+
+.container.dark {
+  background-color: #0d0e10;
+}
+
+.title {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.title.dark {
+  color: #fff;
+}
+
+.highlight {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.highlight::before {
+  content: '';
+  background-color: #f3ceb1;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+}
+
+.highlight.dark::before {
+  background-color: #3f4451;
+}
+
+.image-box {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-box-column {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-box-column:nth-child(1) {
+  align-items: flex-end;
+}
+
+.image-box-column:nth-child(2) {
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #f5fcfd;
+  width: 100%;
+  height: 200px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+.box:nth-child(2n) {
+  background-color: #fff1ed;
+}
+
+.box:nth-child(3n) {
+  background-color: #edf0ff;
+}
+
+.box.dark {
+  background-color: #484b52;
+}
+
+.box.dark:nth-child(2n) {
+  background-color: #3f4451;
+}
+
+.box.dark:nth-child(3n) {
+  background-color: #22262f;
+}
+
+@media (min-width: 321px) {
+  .image-box-column {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 376px) {
+  .image-box {
+    flex-direction: row;
+  }
+
+  .image-box-column {
+    width: 50vw;
+  }
+
+  .image-box-column:nth-child(1) {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  .image-box-column:nth-child(2) {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .box {
+    height: 300px;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .image-box-column:nth-child(1) {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .image-box-column:nth-child(2) {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box {
+    width: 60%;
+  }
+}

@@ -1,0 +1,46 @@
+.background {
+  display: inline-block;
+  background-color: #22262f;
+  height: 30px;
+  width: 70px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.background:hover {
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #f4f6fb;
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.icon-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dark-mode {
+  left: calc(100% - 27px - 4px);
+}
+
+.icon {
+  height: 80%;
+  z-index: 1;
+}
+
+.moon-icon {
+  transform: rotateX(180deg) rotateZ(180deg);
+}

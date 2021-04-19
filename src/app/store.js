@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import overlayReducer from '../redux/reducers/overlay';
+import sidebarReducer from '../redux/reducers/sidebar';
+import themeReducer from '../redux/reducers/theme';
+import languageReducer from '../redux/reducers/language';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    overlay: overlayReducer,
+    sidebar: sidebarReducer,
+    theme: themeReducer,
+    language: languageReducer,
   },
 });

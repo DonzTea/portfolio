@@ -1,0 +1,49 @@
+.container {
+  display: none;
+  flex-grow: 1;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+}
+
+.navlink {
+  color: #9fa0a3;
+  display: inline-block;
+  flex-grow: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.navlink > a:hover {
+  cursor: pointer;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+  transition: 0.5s;
+}
+
+.container a.dark {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: inline-block;
+    position: relative;
+    right: 20px;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
